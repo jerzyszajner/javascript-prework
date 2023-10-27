@@ -1,12 +1,12 @@
 // Deklaracja zmiennych, które będą używane do przechowywania referencji do przycisków
-var argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
+var buttonPaper, buttonRock, buttonScissors;
 
 // Funkcja wywołana po kliknięciu któregokolwiek z przycisków
 function buttonClicked(argButtonName) {
     clearMessages(); // Wyczyszczenie wiadomości na ekranie
     console.log(argButtonName + ' został kliknięty'); // Wyświetlenie informacji w konsoli, który przycisk został naciśnięty
 
-    var argComputerMove, argMoveId, argPlayerMove, computerMove, playerMove, randomNumber; // Deklaracja zmiennych używanych w tej funkcji
+    var computerMove, playerMove, randomNumber; // Deklaracja zmiennych używanych w tej funkcji
 
     // Funkcja zwracająca nazwę ruchu na podstawie przekazanego identyfikatora
     function getMoveName(argMoveId) {
