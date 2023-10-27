@@ -3,7 +3,6 @@ function buttonClicked(argButtonName) {
     clearMessages(); // Wyczyszczenie wiadomości na ekranie
     console.log(argButtonName + ' został kliknięty'); // Wyświetlenie informacji w konsoli, który przycisk został naciśnięty
 
-    var computerMove, playerMove, randomNumber; // Deklaracja zmiennych używanych w tej funkcji
 
     // Funkcja zwracająca nazwę ruchu na podstawie przekazanego identyfikatora
     function getMoveName(argMoveId) {
@@ -38,11 +37,11 @@ function buttonClicked(argButtonName) {
         printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
     }
 
-    playerMove = argButtonName; // Przypisanie wyboru gracza do zmiennej
+    const playerMove = argButtonName; // Przypisanie wyboru gracza do zmiennej
     console.log('ruch gracza to: ' + playerMove); // Wyświetlenie wyboru gracza w konsoli
-    randomNumber = Math.floor(Math.random() * 3 + 1); // Losowanie liczby od 1 do 3, aby wybrać ruch komputera
+    const randomNumber = Math.floor(Math.random() * 3 + 1); // Losowanie liczby od 1 do 3, aby wybrać ruch komputera
     console.log('wylosowana liczba to: ' + randomNumber);
-    computerMove = getMoveName(randomNumber); // Uzyskanie nazwy ruchu komputera na podstawie wylosowanej liczby
+    const computerMove = getMoveName(randomNumber); // Uzyskanie nazwy ruchu komputera na podstawie wylosowanej liczby
     console.log('ruch komputera to: ' + computerMove); // Wyświetlenie ruchu komputera w konsoli
     displayResult(playerMove, computerMove); // Wywołanie funkcji wyświetlającej wynik rozgrywki
 }
