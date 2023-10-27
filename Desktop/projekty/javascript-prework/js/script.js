@@ -53,7 +53,7 @@ function clearMessages() {
 
 // Funkcja do wyświetlania wiadomości na ekranie
 function printMessage(message) {
-    var div = document.createElement('div');
+    const div = document.createElement('div');
     div.innerHTML = message;
     document.getElementById('messages').appendChild(div);
 }
