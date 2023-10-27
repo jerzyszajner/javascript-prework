@@ -1,6 +1,3 @@
-// Deklaracja zmiennych, które będą używane do przechowywania referencji do przycisków
-var buttonPaper, buttonRock, buttonScissors;
-
 // Funkcja wywołana po kliknięciu któregokolwiek z przycisków
 function buttonClicked(argButtonName) {
     clearMessages(); // Wyczyszczenie wiadomości na ekranie
@@ -63,11 +60,11 @@ function printMessage(message) {
 }
 
 // Ustawienie nasłuchiwaczy na przyciskach, aby wywołać funkcję buttonClicked z odpowiednim argumentem, gdy przycisk zostanie naciśnięty
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function () { buttonClicked('kamień'); });
 
-buttonPaper = document.getElementById('button-paper');
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function () { buttonClicked('papier'); });
 
-buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function () { buttonClicked('nożyce'); });
